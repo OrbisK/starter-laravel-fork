@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { Link } from '@inertiajs/vue3'
+
+const items = [{label:'test', to: '/test'}]
 </script>
 
 <template>
@@ -24,6 +26,8 @@ import { Link } from '@inertiajs/vue3'
         />
       </template>
     </UHeader>
+
+    <UNavigationMenu :items="items" />
 
     <UMain>
       <slot />
